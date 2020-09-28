@@ -1,0 +1,155 @@
+{
+    "system": {
+        "counters": [
+            {
+                "MetricName": "numcpus",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "CPU count of Citrix ADC VPX"
+                    }
+                ],
+                "Unit": "Count",
+                "Value": ""
+            },
+            {
+                "MetricName": "disk1avail",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "Free Space in Citrix ADC var partition"
+                    }
+                ],
+                "Unit": "Megabytes",
+                "Value": ""
+            },
+            {
+                "MetricName": "disk1used",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "Used Space in Citrix ADC var partition"
+                    }
+                ],
+                "Unit": "Megabytes",
+                "Value": ""
+            },
+            {
+                "MetricName": "disk0avail",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "Free Space in Citrix ADC flash partition"
+                    }
+                ],
+                "Unit": "Megabytes",
+                "Value": ""
+            },
+            {
+                "MetricName": "disk0used",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "Used Space in Citrix ADC flash partition"
+                    }
+                ],
+                "Unit": "Megabytes",
+                "Value": ""
+            },
+            {
+                "MetricName": "cpuusagepcnt",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "CPU Usage Percentage"
+                    }
+                ],
+                "Unit": "Percent",
+                "Value": ""
+            },
+            {
+                "MetricName": "memusagepcnt",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "Memory Usage Percentage"
+                    }
+                ],
+                "Unit": "Percent",
+                "Value": ""
+            },
+            {
+                "MetricName": "mgmtcpuusagepcnt",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "Management CPU Usage Percentage"
+                    }
+                ],
+                "Unit": "Percent",
+                "Value": ""
+            },
+            {
+                "MetricName": "pktcpuusagepcnt",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "Packet CPU Usage Percentage"
+                    }
+                ],
+                "Unit": "Percent",
+                "Value": ""
+            },
+            {
+                "MetricName": "rescpuusagepcnt",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "Res CPU Usage Percentage"
+                    }
+                ],
+                "Unit": "Percent",
+                "Value": ""
+            },
+            {
+                "MetricName": "disk1perusage",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "VAR Partition Usage Percentage"
+                    }
+                ],
+                "Unit": "Percent",
+                "Value": ""
+            },
+            {
+                "MetricName": "disk0perusage",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "FLASH Partition Usage Percentage"
+                    }
+                ],
+                "Unit": "Percent",
+                "Value": ""
+            }
+
+        ]
+    },
+
+    "systemcpu": {
+        "counters": [
+            {
+                "MetricName": "percpuuse",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": "CPU Core Usage of Citrix ADC VPX"
+                    }
+                ],
+                "Unit": "Percent",
+                "Value": ""
+            }
+        ]
+    }
+}
