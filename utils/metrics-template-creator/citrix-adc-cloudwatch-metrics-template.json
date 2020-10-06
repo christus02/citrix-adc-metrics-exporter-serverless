@@ -1,0 +1,4210 @@
+{
+    "protocoltcp": {
+        "counters": [
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptotrxpkts"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptotrxbytes"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptottxbytes"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptottxpkts"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptotclientconnopened"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptotserverconnopened"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptotsyn"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptotsynprobe"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptotsvrfin"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptotcltfin"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcpactiveserverconn"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcpcurclientconnestablished"
+            }, 
+            {
+                "Unit": "Count", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcpcurserverconnestablished"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcprxpktsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcprxbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptxpktsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcptxbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcpclientconnopenedrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcperrbadchecksum"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcperrbadchecksumrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcperranyportfail"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcperripportfail"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcperrbadstateconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcperrrstthreshold"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcpsynrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tcpsynproberate"
+            }
+        ]
+    }, 
+    "sslvserver": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxtotdecbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxtotencbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxtothwdec_bytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxtothwencbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxtotsessionnew"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxtotsessionhits"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "ssltotclientauthsuccess"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "ssltotclientauthfailure"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "vslbhealth"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "actsvcs"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslclientauthsuccessrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslclientauthfailurerate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxencbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxdecbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxhwencbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxhwdec_bytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxsessionnewrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslctxsessionhitsrate"
+            }
+        ]
+    }, 
+    "aaa": {
+        "counters": [
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthsuccess"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthfail"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthonlyhttpsuccess"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthonlyhttpfail"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthnonhttpsuccess"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthnonhttpfail"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaatotsessions"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaatotsessiontimeout"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaatottmsessions"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaacuricasessions"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaacuricaonlyconn"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaacuricaconn"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaacurtmsessions"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaacursessions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthsuccessrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthfailrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthonlyhttpsuccessrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthonlyhttpfailrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthnonhttpsuccessrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaaauthnonhttpfailrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaacursessionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaasessionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaasessiontimeoutrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaacuricasessionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaacuricaonlyconnrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaacuricaconnrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaacurtmsessionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "aaatmsessionsrate"
+            }
+        ]
+    }, 
+    "service": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "throughput"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalrequests"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalresponses"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalrequestbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalresponsebytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "surgecount"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "svrestablishedconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "maxclients"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "vsvrservicehits"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "throughputrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "avgsvrttfb"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "responsesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "requestbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "responsebytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "curclntconnections"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cursrvrconnections"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "curreusepool"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "curload"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "curtflags"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "vsvrservicehitsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "activetransactions"
+            }
+        ]
+    }, 
+    "csvserver": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalpktssent"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tothits"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalrequestbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalpktsrecvd"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalresponses"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "toleratingttlbtransactionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totcltttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "deferredreq"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totspillovers"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "invalidrequestresponse"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalrequests"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "invalidrequestresponsedropped"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "frustratingttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "toleratingttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totvserverdownbackuphits"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalresponsebytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "requestbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "requestsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "pktsrecvdrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "frustratingttlbtransactionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cltresponsetimeapdex"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sothreshold"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cursrvrconnections"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "labelledconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "curmptcpsessions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "deferredreqrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "avgcltttlb"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cltttlbtransactionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "responsesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "pktssentrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cursubflowconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "curclntconnections"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "pushlabel"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "hitsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "establishedconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "responsebytesrate"
+            }
+        ]
+    }, 
+    "sslcertkey": {
+        "counters": [
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "daystoexpiration"
+            }
+        ]
+    }, 
+    "system": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "numcpus"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "disk1avail"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "disk1used"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "disk0avail"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "disk0used"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cpuusagepcnt"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "memusagepcnt"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "mgmtcpuusagepcnt"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "pktcpuusagepcnt"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "rescpuusagepcnt"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "disk1perusage"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "disk0perusage"
+            }
+        ]
+    }, 
+    "protocolhttp": {
+        "counters": [
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptotrequests"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptotresponses"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptotposts"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptotgets"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptotothers"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "spdytotstreams"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "spdyv2totstreams"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "spdyv3totstreams"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptotrxrequestbytes"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptotrxresponsebytes"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptottxrequestbytes"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptot10requests"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptot11requests"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptot10responses"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptot11responses"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptotchunkedrequests"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptotchunkedresponses"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrnoreusemultipart"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrincompleteheaders"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrincompleterequests"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrincompleteresponses"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrserverbusy"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrlargecontent"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrlargechunk"
+            }, 
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrlargectlen"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httprequestsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "spdystreamsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "spdyv2streamsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "spdyv3streamsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httprxrequestbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httprxresponsebytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httptxrequestbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httpresponsesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httppostsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httpgetsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httpothersrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httpchunkedresponsesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httpchunkedrequestsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "http10requestsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "http11requestsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "http10responsesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "http11responsesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrnoreusemultipartrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrincompleterequestsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrincompleteresponsesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "httperrserverbusyrate"
+            }
+        ]
+    }, 
+    "ssl": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "ssltottlsv11sessions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "ssltotsslv2sessions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "ssltotsessions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "ssltotsslv2handshakes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "ssltotenc"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslcryptoutilizationstat"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "ssltotnewsessions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslsessionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "ssldecrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslencrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslsslv2handshakesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sslnewsessionsrate"
+            }
+        ]
+    }, 
+    "k8s_ingress_lbvs": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalpktssent"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tothits"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalrequestbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalpktsrecvd"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalresponses"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "surgecount"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "toleratingttlbtransactionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totcltttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "deferredreq"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totspillovers"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "invalidrequestresponse"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalrequests"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "invalidrequestresponsedropped"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "frustratingttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "toleratingttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totvserverdownbackuphits"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalresponsebytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalsvrbusyerr"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "requestbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "requestsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "pktsrecvdrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "frustratingttlbtransactionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cltresponsetimeapdex"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sothreshold"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cursrvrconnections"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "svcsurgecount"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "labelledconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "curmptcpsessions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "deferredreqrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "avgcltttlb"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cltttlbtransactionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "responsesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "actsvcs"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "pktssentrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cursubflowconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "curclntconnections"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "pushlabel"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "hitsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "establishedconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "responsebytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "inactsvcs"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "svrbusyerrrate"
+            }
+        ]
+    }, 
+    "Interface": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "nictotmulticastpkts"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "rxcrcerrors"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totmacmoved"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "trunkpktstransmitted"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "errdroppedrxpkts"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "linkreinits"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "errifindiscards"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "errdroppedtxpkts"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tottxbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "jumbopktstransmitted"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totnetscalerpkts"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "errpkttx"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totrxbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "trunkpktsreceived"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "errpktrx"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "txlacpdu"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "jumbopktsreceived"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totrxpkts"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tottxpkts"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "errpktrxrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "rxlacpdurate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "errdroppedtxpktsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "rxpktsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "errifindiscardsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "nicerrifoutdiscardsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "macmovedrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "rxcrcerrorsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "jumbopktstransmittedrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "jumbopktsreceivedrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "rxbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "errdroppedrxpktsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "trunkpktsreceivedrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "txlacpdurate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "txbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "txpktsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "netscalerpktsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "trunkpktstransmittedrate"
+            }
+        ]
+    }, 
+    "services": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalresponses"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totsvrttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalrequests"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalresponsebytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalrequestbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "avgsvrttfb"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "requestsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cursrvrconnections"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "responsesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "toleratingttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "responsebytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "requestbytesrate"
+            }
+        ]
+    }, 
+    "lbvserver_binding": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "percentup"
+            }
+        ]
+    }, 
+    "ns": {
+        "counters": [
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "rxmbitsrate"
+            }
+        ]
+    }, 
+    "lbvserver": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalpktssent"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "tothits"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalrequestbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalpktsrecvd"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalresponses"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "surgecount"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "toleratingttlbtransactionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totcltttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "deferredreq"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totspillovers"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "invalidrequestresponse"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalrequests"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "invalidrequestresponsedropped"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "frustratingttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "toleratingttlbtransactions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totvserverdownbackuphits"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalresponsebytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "totalsvrbusyerr"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "requestbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "requestsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "pktsrecvdrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "frustratingttlbtransactionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cltresponsetimeapdex"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "sothreshold"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cursrvrconnections"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "svcsurgecount"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "labelledconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "curmptcpsessions"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "deferredreqrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "avgcltttlb"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cltttlbtransactionsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "responsesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "actsvcs"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "pktssentrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "cursubflowconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "curclntconnections"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "pushlabel"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "hitsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "establishedconn"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "responsebytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "inactsvcs"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "svrbusyerrrate"
+            }
+        ]
+    }, 
+    "protocolip": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotrxpkts"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotrxbytes"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptottxpkts"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptottxbytes"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotrxmbits"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptottxmbits"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotroutedpkts"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotroutedmbits"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotfragments"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotsuccreassembly"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotaddrlookup"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotaddrlookupfail"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotudpfragmentsfwd"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptottcpfragmentsfwd"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotbadchecksums"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotunsuccreassembly"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptottoobig"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotdupfragments"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotoutoforderfrag"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotvipdown"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotttlexpired"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotmaxclients"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotunknownsvcs"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotinvalidheadersz"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotinvalidpacketsize"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptottruncatedpackets"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "noniptottruncatedpackets"
+            }, 
+            {
+                "Unit": "Megabytes", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptotbadmacaddrs"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iprxpktsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iprxbytesrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptxpktsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptxbytesrate"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iprxmbitsrate"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iptxmbitsrate"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iproutedpktsrate"
+            }, 
+            {
+                "Unit": "Megabits/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "iproutedmbitsrate"
+            }
+        ]
+    }, 
+    "systemcpu": {
+        "counters": [
+            {
+                "Unit": "Percent", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "percpuuse"
+            }
+        ]
+    }, 
+    "nscapacity": {
+        "counters": [
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "maxbandwidth"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "minbandwidth"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "actualbandwidth"
+            }, 
+            {
+                "Unit": "Count/Second", 
+                "Dimensions": [
+                    {
+                        "Name": "Description", 
+                        "Value": "citrixadc_ssl_cert_days_to_expire"
+                    }
+                ], 
+                "Value": "", 
+                "MetricName": "bandwidth"
+            }
+        ]
+    }
+}
