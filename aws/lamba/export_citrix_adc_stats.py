@@ -16,18 +16,66 @@ logging.getLogger('botocore').setLevel(logging.WARNING)
 ec2_client = boto3.client('ec2')
 cw_client = boto3.client('cloudwatch')
 asg_client = boto3.client('autoscaling')
+METRICS_TEMPLATE = "https://raw.githubusercontent.com/christus02/citrix-adc-metrics-exporter-serverless/master/utils/metrics-template-creator/citrix-adc-cloudwatch-metrics-template.json"
+CLOUDWATCH_NAMESPACE = 'CITRIXADC'
 
+def get_metrics_template():
+    '''
+    Method to fetch the Metrics Template from a URL
+    '''
+    headers = {'Content-Type': 'application/json'}
+    r = urllib2.Request(METRICS_TEMPLATE,  headers=headers)
+    try:
+        resp = urllib2.urlopen(r)
+        return json.loads(resp.read())
+    except urllib2.HTTPError as hte:
+        logger.info("Error Fetching the metrics template : Error code: " +
+                    str(hte.code) + ", reason=" + hte.reason)
+    except:
+        logger.warn("Caught exception: " + str(sys.exc_info()[:2]))
+    return {}
 
-def get_stats(vpx_instance_info):
+def get_all_stats(vpx_instance_info, feature_list):
+    metrics_json = get_metrics_template()
+    stats = {}
+    for feature in metrics_json.keys():
+        stats[feature] = get_feature_stats(vpx_instance_info, feature)
+    return stats
+
+def parse_stats(vpx_instance_info, metrics_json, stats):
+    filled_metrics = []
+    for feature in metrics_json.keys():
+        if feature not in stats[feature]:
+            continue;
+        for counter in metrics_json[feature]['counters']:
+            filled_counter = counter
+            if filled_counter['MetricName'] in stats[feature][feature]:
+                filled_counter['Value'] = int(stats[feature][feature].get(filled_counter['MetricName'], 0))
+                filled_counter['Timestamp'] = datetime.now()
+                filled_counter['Dimensions'][1]['Value'] = vpx_instance_info['asg-name']  # AutoScale Group
+                filled_counter['Dimensions'][2]['Value'] = vpx_instance_info['instance-id']  # Instance ID
+                filled_metrics.append(filled_counter)
+    return filled_metrics
+
+def fill_up_metrics(vpx_instance_info, metrics_json):
+    all_stats = get_all_stats(vpx_instance_info, metrics_json.keys())
+    filled_metrics = parse_stats(vpx_instance_info, metrics_json, all_stats)
+    return filled_metrics
+
+def get_feature_stats(vpx_instance_info,feature):
+    '''
+    Method for fetch the Nitro stats from VPX
+    '''
     REQUEST_METHOD = "http"  # Choose protocol as http or https
     CITRIX_ADC_USERNAME = "nsroot"
     CITRIX_ADC_PASSWORD = vpx_instance_info['instance-id']
+    NSIP = vpx_instance_info['nsip']
+
     if vpx_instance_info['nsip-public'] is not "":
         logger.info("Getting Stats from VPX over it's public NSIP " + vpx_instance_info['nsip-public'])
-        url = '{}://{}/nitro/v1/stat/lbvserver/'.format(REQUEST_METHOD, vpx_instance_info['nsip-public'])
-    else:
-        logger.info("Getting Stats from VPX over it's private NSIP " + vpx_instance_info['nsip'])
-        url = '{}://{}/nitro/v1/stat/lbvserver/'.format(REQUEST_METHOD, vpx_instance_info['nsip'])
+        NSIP = vpx_instance_info['nsip-public']
+
+    url = '{}://{}/nitro/v1/stat/{}/'.format(REQUEST_METHOD, NSIP, feature)
     headers = {'Content-Type': 'application/json', 'X-NITRO-USER': CITRIX_ADC_USERNAME, 'X-NITRO-PASS': CITRIX_ADC_PASSWORD}
     r = urllib2.Request(url,  headers=headers)
     try:
@@ -39,7 +87,6 @@ def get_stats(vpx_instance_info):
     except:
         logger.warn("Caught exception: " + str(sys.exc_info()[:2]))
     return {}
-
 
 def make_metric(metricname, dimensions, value, unit):
     metric = {'MetricName': metricname,
@@ -142,20 +189,28 @@ def put_stats(vpx_info, stats):
         push_out = cw_client.put_metric_data(Namespace='NetScaler', MetricData=metricData)
         logger.info("Result of Pushing Metrics to Cloud Watch: " + str(push_out))
 
+def push_stats(metricData, namespace=CLOUDWATCH_NAMESPACE):
+    push_out = cw_client.put_metric_data(Namespace=namespace, MetricData=metricData)
+    logger.info("Result of Pushing Metrics to Cloud Watch: " + str(push_out))
+
 
 def lambda_handler(event, context):
     logger.info(str(event))
-    try:
-        asg_name = os.environ['ASG_NAME']
-    except KeyError as ke:
-        logger.warn("Bailing since we can't get the required env var: " +
-                    ke.args[0])
-        return
+    asg_name = "raghulc2-vpx-asg"
+    #try:
+    #    asg_name = os.environ['ASG_NAME']
+    #except KeyError as ke:
+    #    logger.warn("Bailing since we can't get the required env var: " +
+    #                ke.args[0])
+    #    return
 
+    metrics_json = get_metrics_template()
     vpx_instances = get_vpx_instances(asg_name)
-    stats_list = []
     for vpx in vpx_instances:
-        stats = get_stats(vpx)
-        stats_list.append(stats)
-        put_stats(vpx, stats)
-    put_aggr_stats(asg_name, stats_list)
+        stats = fill_up_metrics(vpx, metrics_json)
+        push_stats(stats)
+
+if __name__ == "__main__":
+    event = []
+    context = []
+    lambda_handler(event, context)
