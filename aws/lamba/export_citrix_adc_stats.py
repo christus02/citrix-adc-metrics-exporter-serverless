@@ -3,8 +3,9 @@ import logging
 import sys
 import urllib2
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
+import copy
 
 logging.basicConfig()
 
@@ -18,6 +19,8 @@ cw_client = boto3.client('cloudwatch')
 asg_client = boto3.client('autoscaling')
 METRICS_TEMPLATE = "https://raw.githubusercontent.com/christus02/citrix-adc-metrics-exporter-serverless/master/utils/metrics-template-creator/citrix-adc-cloudwatch-metrics-template.json"
 CLOUDWATCH_NAMESPACE = 'CITRIXADC'
+INCLUDE_FEATURES = ['system', 'protocolhttp', 'lbvserver', 'csvserver', 'service']
+#INCLUDE_FEATURES = []
 
 def get_metrics_template():
     '''
@@ -38,27 +41,38 @@ def get_metrics_template():
 def get_all_stats(vpx_instance_info, feature_list):
     metrics_json = get_metrics_template()
     stats = {}
-    for feature in metrics_json.keys():
+    for feature in feature_list:
         stats[feature] = get_feature_stats(vpx_instance_info, feature)
     return stats
 
 def parse_stats(vpx_instance_info, metrics_json, stats):
     filled_metrics = []
-    for feature in metrics_json.keys():
+    for feature in stats.keys():
         if feature not in stats[feature]:
             continue;
         for counter in metrics_json[feature]['counters']:
             filled_counter = counter
             if filled_counter['MetricName'] in stats[feature][feature]:
                 filled_counter['Value'] = int(stats[feature][feature].get(filled_counter['MetricName'], 0))
-                filled_counter['Timestamp'] = datetime.now()
+                filled_counter['Timestamp'] = datetime.now() - timedelta(days=2)
                 filled_counter['Dimensions'][1]['Value'] = vpx_instance_info['asg-name']  # AutoScale Group
                 filled_counter['Dimensions'][2]['Value'] = vpx_instance_info['instance-id']  # Instance ID
                 filled_metrics.append(filled_counter)
     return filled_metrics
 
 def fill_up_metrics(vpx_instance_info, metrics_json):
-    all_stats = get_all_stats(vpx_instance_info, metrics_json.keys())
+    features = metrics_json.keys()
+
+    selected_features = []
+    if len(INCLUDE_FEATURES) != 0:
+        # Get Selective Stats only
+        for feature in features:
+            if feature in INCLUDE_FEATURES:
+                selected_features.append(feature)
+    else:
+        selected_features = features
+
+    all_stats = get_all_stats(vpx_instance_info, selected_features)
     filled_metrics = parse_stats(vpx_instance_info, metrics_json, all_stats)
     return filled_metrics
 
@@ -189,28 +203,35 @@ def put_stats(vpx_info, stats):
         push_out = cw_client.put_metric_data(Namespace='NetScaler', MetricData=metricData)
         logger.info("Result of Pushing Metrics to Cloud Watch: " + str(push_out))
 
+def split_metrics_list(metrics, size=20):
+    for i in range(0, len(metrics), size):
+        yield metrics[i:i + size]
+
 def push_stats(metricData, namespace=CLOUDWATCH_NAMESPACE):
-    push_out = cw_client.put_metric_data(Namespace=namespace, MetricData=metricData)
-    logger.info("Result of Pushing Metrics to Cloud Watch: " + str(push_out))
+    
+    # The max metric list length is 20 for AWS CloudWatch
+    # So pushing multiple times if the length is greater than 20
+    if (len(metricData) > 20):
+        chuncked_metricData = split_metrics_list(metricData)
+        for data in chuncked_metricData:
+            push_out = cw_client.put_metric_data(Namespace=namespace, MetricData=data)
+            logger.info("Result of Pushing Metrics to Cloud Watch: " + str(push_out))
+    else:
+        push_out = cw_client.put_metric_data(Namespace=namespace, MetricData=metricData)
+        logger.info("Result of Pushing Metrics to Cloud Watch: " + str(push_out))
 
 
 def lambda_handler(event, context):
     logger.info(str(event))
-    asg_name = "raghulc2-vpx-asg"
-    #try:
-    #    asg_name = os.environ['ASG_NAME']
-    #except KeyError as ke:
-    #    logger.warn("Bailing since we can't get the required env var: " +
-    #                ke.args[0])
-    #    return
+    try:
+        asg_name = os.environ['ASG_NAME']
+    except KeyError as ke:
+        logger.warn("Bailing since we can't get the required env var: " +
+                    ke.args[0])
+        return
 
     metrics_json = get_metrics_template()
     vpx_instances = get_vpx_instances(asg_name)
     for vpx in vpx_instances:
         stats = fill_up_metrics(vpx, metrics_json)
         push_stats(stats)
-
-if __name__ == "__main__":
-    event = []
-    context = []
-    lambda_handler(event, context)
