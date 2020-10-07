@@ -64,12 +64,34 @@ def parse_stats(vpx_instance_info, metrics_json, stats):
             continue
         for counter in metrics_json[feature]['counters']:
             filled_counter = counter
+            if type(stats[feature][feature]) == list:
+                filled_counter = get_each_stats(filled_counter, stats[feature][feature], feature, vpx_instance_info)
+                filled_metrics.extend(filled_counter) # Extend the list - Don't append
+                continue
             if filled_counter['MetricName'] in stats[feature][feature]:
                 filled_counter['Value'] = int(stats[feature][feature].get(filled_counter['MetricName'], 0))
                 filled_counter['Timestamp'] = datetime.now()
                 filled_counter['Dimensions'][1]['Value'] = vpx_instance_info['asg-name']  # AutoScale Group
                 filled_counter['Dimensions'][2]['Value'] = vpx_instance_info['instance-id']  # Instance ID
                 filled_metrics.append(filled_counter)
+    return filled_metrics
+
+def get_each_stats(filled_counter, stats, feature, vpx_instance_info):
+    '''
+        Method to iterate through the list of entities and create metrics
+    '''
+    filled_metrics = []
+    for each_stat in stats:
+        if filled_counter['MetricName'] in each_stat:
+            filled_counter['Value'] = int(each_stat.get(filled_counter['MetricName'], 0))
+            filled_counter['Timestamp'] = datetime.now()
+            filled_counter['Dimensions'][1]['Value'] = vpx_instance_info['asg-name']  # AutoScale Group
+            filled_counter['Dimensions'][2]['Value'] = vpx_instance_info['instance-id']  # Instance ID
+            if len(filled_counter['Dimensions']) == 4:  # assume the feature dimension is already set
+                filled_counter['Dimensions'][3]['Value'] = each_stat['name']
+            elif len(filled_counter['Dimensions']) == 3:  # newly add the feature dimension
+                filled_counter['Dimensions'].append({'Name': feature, 'Value': each_stat['name']})  # Add the name of the feature to a dimension
+            filled_metrics.append(filled_counter)
     return filled_metrics
 
 def fill_up_metrics(vpx_instance_info, metrics_json):
