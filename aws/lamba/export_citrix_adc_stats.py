@@ -3,7 +3,7 @@ import logging
 import sys
 import urllib2
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
 import json
 import copy
 
@@ -66,7 +66,7 @@ def parse_stats(vpx_instance_info, metrics_json, stats):
             filled_counter = counter
             if filled_counter['MetricName'] in stats[feature][feature]:
                 filled_counter['Value'] = int(stats[feature][feature].get(filled_counter['MetricName'], 0))
-                filled_counter['Timestamp'] = datetime.now() - timedelta(days=2)
+                filled_counter['Timestamp'] = datetime.now()
                 filled_counter['Dimensions'][1]['Value'] = vpx_instance_info['asg-name']  # AutoScale Group
                 filled_counter['Dimensions'][2]['Value'] = vpx_instance_info['instance-id']  # Instance ID
                 filled_metrics.append(filled_counter)
