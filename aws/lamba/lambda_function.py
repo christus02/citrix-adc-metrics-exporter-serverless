@@ -6,6 +6,8 @@ import os
 from datetime import datetime
 import json
 import copy
+from datadog import initialize, api
+import citrixadcmetrics as metrics_template
 
 logging.basicConfig()
 
@@ -17,8 +19,8 @@ logging.getLogger('botocore').setLevel(logging.WARNING)
 ec2_client = boto3.client('ec2')
 cw_client = boto3.client('cloudwatch')
 asg_client = boto3.client('autoscaling')
-METRICS_TEMPLATE = "https://raw.githubusercontent.com/christus02/citrix-adc-metrics-exporter-serverless/master/utils/metrics-template-creator/citrix-adc-cloudwatch-metrics-template.json"
 CLOUDWATCH_NAMESPACE = 'CITRIXADC'
+DATADOG_PREFIX = 'citrixadc'
 '''
     Use the INCLUDE_FEATURES list to specify what features stats
     to pull and push to CloudWatch
@@ -28,47 +30,81 @@ CLOUDWATCH_NAMESPACE = 'CITRIXADC'
 INCLUDE_FEATURES = ['system', 'protocolhttp', 'lbvserver', 'csvserver', 'service']
 #INCLUDE_FEATURES = []
 
-def get_metrics_template():
-    '''
-    Method to fetch the Metrics Template from a URL
-    '''
-    headers = {'Content-Type': 'application/json'}
-    r = urllib2.Request(METRICS_TEMPLATE,  headers=headers)
-    try:
-        resp = urllib2.urlopen(r)
-        return json.loads(resp.read())
-    except urllib2.HTTPError as hte:
-        logger.info("Error Fetching the metrics template : Error code: " +
-                    str(hte.code) + ", reason=" + hte.reason)
-    except:
-        logger.warn("Caught exception: " + str(sys.exc_info()[:2]))
-    return {}
+CLOUDWATCH_TEMPLATE = {
+    "MetricName": "",
+    "Value": "",
+    "Timestamp": "",
+    "Unit": "Count",
+    "Dimensions": [
+        {
+            "Name": "Description",
+            "Value": ""
+        },
+        {
+            "Name": "CitrixADC-AutoScale-Group",
+            "Value": ""
+        },
+        {
+            "Name": "CitrixADC-InstanceID",
+            "Value": ""
+        }
+    ]
+}
 
-def get_all_stats(vpx_instance_info, feature_list):
-    '''
-        Method to fetch all Nitro Stats based on the provided feature list
-    '''
-    stats = {}
-    for feature in feature_list:
-        stats[feature] = get_feature_stats(vpx_instance_info, feature)
-    return stats
+DATADOG_TEMPLATE = {
+    "metric": "",
+    "description": "",
+    "type": "",
+    "points": "",
+    "host": "",
+    "tags": [
+        "CitrixADC-AutoScale-Group:autoscalegroup",
+        "Source:AWS"
+    ]
+}
 
-def parse_stats(vpx_instance_info, metrics_json, stats):
+def parse_stats_cloudwatch(vpx_instance_info, metrics, stats):
     '''
         Method to update the metrics json template with the 
         Nitro Stats got from the VPX
+        CLOUDWATCH_TEMPLATE = {
+                "MetricName": "",
+                "Value": "",
+                "Timestamp": "",
+                "Unit": "Count",
+                "Dimensions": [
+                    {
+                        "Name": "Description",
+                        "Value": ""
+                    },
+                    {
+                        "Name": "CitrixADC-AutoScale-Group",
+                        "Value": ""
+                    },
+                    {
+                        "Name": "CitrixADC-InstanceID",
+                        "Value": ""
+                    }
+                ]
+        }
     '''
     filled_metrics = []
     for feature in stats.keys():
-        if feature not in stats[feature]:
-            continue
-        for counter in metrics_json[feature]['counters']:
-            filled_counter = counter
+        for counter in metrics[feature]:
+            filled_counter = copy.deepcopy(CLOUDWATCH_TEMPLATE)
             if type(stats[feature][feature]) == list:
-                filled_counter = get_each_stats(filled_counter, stats[feature][feature], feature, vpx_instance_info)
+                filled_counter['MetricName'] = counter['MetricName']
+                filled_counter['Dimensions'][0]['Value'] = counter['Description']
+                filled_counter['Unit'] = counter['Unit']
+                filled_counter = get_each_stats_cloudwatch(filled_counter, stats[feature][feature], feature, vpx_instance_info)
                 filled_metrics.extend(filled_counter) # Extend the list - Don't append
                 continue
-            if filled_counter['MetricName'] in stats[feature][feature]:
+            # Counter is from the input metrics template
+            # filled_counter is the CLOUDWATCH_TEMPLATE which is being filled
+            if counter['MetricName'] in stats[feature][feature]:
+                filled_counter['MetricName'] = counter['MetricName']
+                filled_counter['Dimensions'][0]['Value'] = counter['Description']
+                filled_counter['Unit'] = counter['Unit']
                 filled_counter['Value'] = int(stats[feature][feature].get(filled_counter['MetricName'], 0))
                 filled_counter['Timestamp'] = datetime.now()
                 filled_counter['Dimensions'][1]['Value'] = vpx_instance_info['asg-name']  # AutoScale Group
@@ -76,7 +112,7 @@ def parse_stats(vpx_instance_info, metrics_json, stats):
                 filled_metrics.append(filled_counter)
     return filled_metrics
 
-def get_each_stats(filled_counter, stats, feature, vpx_instance_info):
+def get_each_stats_cloudwatch(filled_counter, stats, feature, vpx_instance_info):
     '''
         Method to iterate through the list of entities and create metrics
     '''
@@ -94,25 +130,79 @@ def get_each_stats(filled_counter, stats, feature, vpx_instance_info):
             filled_metrics.append(filled_counter)
     return filled_metrics
 
-def fill_up_metrics(vpx_instance_info, metrics_json):
-    '''
-        Method to fetch all the Nitro stats from the VPX
-        and fill the JSON Metrics accordingly with the Nitro Stats
-        Value
-    '''
-    features = metrics_json.keys()
-    selected_features = []
-    if len(INCLUDE_FEATURES) != 0:
-        # Get Selective Stats only
-        for feature in features:
-            if feature in INCLUDE_FEATURES:
-                selected_features.append(feature)
-    else:
-        selected_features = features
 
-    all_stats = get_all_stats(vpx_instance_info, selected_features)
-    filled_metrics = parse_stats(vpx_instance_info, metrics_json, all_stats)
+def parse_stats_datadog(vpx_instance_info, metrics, stats):
+    '''
+        Method to update the metrics json template with the 
+        Nitro Stats got from the VPX
+        DATADOG_TEMPLATE = {
+            "metric": "",
+            "description": "",
+            "type": "",
+            "points": "",
+            "host": "",
+            "tags": [
+                "CitrixADC-AutoScale-Group:autoscalegroup",
+                "Source:AWS"
+            ]
+        }
+    '''
+    filled_metrics = []
+    for feature in stats.keys():
+        for counter in metrics[feature]:
+            filled_counter = copy.deepcopy(DATADOG_TEMPLATE)
+            if type(stats[feature][feature]) == list:
+                filled_counter['metric'] = counter['MetricName']
+                filled_counter['description'] = counter['Description']
+                filled_counter['type'] = counter['Type'].lower()
+                filled_counter = get_each_stats_datadog(filled_counter, stats[feature][feature], feature, vpx_instance_info)
+                filled_metrics.extend(filled_counter) # Extend the list - Don't append
+                continue
+            # Counter is from the input metrics template
+            # filled_counter is the DATADOG_TEMPLATE which is being filled
+            if counter['MetricName'] in stats[feature][feature]:
+                filled_counter['metric'] = counter['MetricName']
+                filled_counter['description'] = counter['Description']
+                filled_counter['type'] = counter['Type'].lower()
+                filled_counter['points'] = int(stats[feature][feature].get(filled_counter['metric'], 0))
+                filled_counter['host'] = vpx_instance_info['instance-id']  # Instance ID
+                filled_counter['tags'][0] = "CitrixADC-AutoScale-Group:" + vpx_instance_info['asg-name']
+                filled_counter['metric'] = DATADOG_PREFIX + '.' + filled_counter['metric']  # Prefix with citrixadc for each metric
+                filled_metrics.append(filled_counter)
     return filled_metrics
+
+def get_each_stats_datadog(filled_counter, stats, feature, vpx_instance_info):
+    '''
+        Method to iterate through the list of entities and create metrics
+    '''
+    filled_metrics = []
+    for each_stat in stats:
+        if filled_counter['metric'] in each_stat:
+            filled_counter['points'] = int(each_stat.get(filled_counter['metric'], 0))
+            filled_counter['host'] = vpx_instance_info['instance-id']  # Instance ID
+            filled_counter['tags'][0] = "CitrixADC-AutoScale-Group:" + vpx_instance_info['asg-name']
+            # Assuming we have only 2 tags set
+            if len(filled_counter['tags']) == 3:
+                filled_counter['tags'][2] = feature + ":" + each_stat['name']
+            elif len(filled_counter['tags']) == 2:
+                filled_counter['tags'].append(feature + ":" + each_stat['name']) # Add a tag with feature:name
+            filled_counter['metric'] = DATADOG_PREFIX + '.' + filled_counter['metric']  # Prefix with citrixadc for each metric
+            filled_metrics.append(filled_counter)
+    return filled_metrics
+
+def push_metrics_cloudwatch(vpx, metrics, stats):
+    filled_metrics = parse_stats_cloudwatch(vpx, metrics, stats)
+    post_cloudwatch_metrics_data(filled_metrics)
+
+def push_metrics_datadog(vpx, metrics, stats):
+    filled_metrics = parse_stats_datadog(vpx, metrics, stats)
+    post_datadog_metrics_data(filled_metrics)
+
+def pull_citrixadc_metrics(vpx, features):
+    stats = {}
+    for feature in features:
+        stats[feature] = get_feature_stats(vpx, feature)
+    return stats
 
 def get_feature_stats(vpx_instance_info,feature):
     '''
@@ -187,7 +277,7 @@ def split_metrics_list(metrics, size=20):
     for i in range(0, len(metrics), size):
         yield metrics[i:i + size]
 
-def push_stats(metricData, namespace=CLOUDWATCH_NAMESPACE):
+def post_cloudwatch_metrics_data(metricData, namespace=CLOUDWATCH_NAMESPACE):
     '''
         Method to push the metrics to Cloud Watch
     '''
@@ -205,23 +295,63 @@ def push_stats(metricData, namespace=CLOUDWATCH_NAMESPACE):
         push_out = cw_client.put_metric_data(Namespace=namespace, MetricData=metricData)
         logger.info("Result of Pushing Metrics to Cloud Watch: " + str(push_out))
 
+def post_datadog_metrics_data(metricData):
+    push_out = api.Metric.send(metricData)
+    logger.info("Result of Pushing Metrics to Datadog: " + str(push_out))
 
 def lambda_handler(event, context):
     logger.info(str(event))
+
+    PUSH_TO_CLOUDWATCH = False
+    PUSH_TO_DATADOG = False
+
+    # Check if Autoscale Group is provided in the ENV
     try:
         asg_name = os.environ['ASG_NAME']
     except KeyError as ke:
         logger.warn("Bailing since we can't get the required env var: " +
                     ke.args[0])
         return
+    PUSH_TO_CLOUDWATCH = True
+
+    # Check if Datadog's API Key is provided in the ENV
+    DATADOG_API_KEY = os.environ.get('DATADOG_API_KEY', '')
+    if DATADOG_API_KEY == '':
+        logger.warn("Could not push metrics to Datadog. Please provide the DataDog API Key in the ENV")
+    else:
+        logger.info("Pushing metrics to Datadog also")
+        PUSH_TO_DATADOG = True
+        # Datadog Configs
+        options = {
+            'api_key': DATADOG_API_KEY
+        }
+        initialize(**options)
+
     '''
-        1. Import the JSON Metrics Template
-        2. Pull Nitro Stats from VPX(s) based on the JSON Metrics Template
-        3. Fill the JSON Metrics template with the Nitro Stats value
+        1. Use the Metrics Template bundled with the Lambda package
+        2. Pull Nitro Stats from VPX(s) based on the Metrics Template
+        3. Fill the Metrics template with the Nitro Stats value
         4. Push the Metrics to CloudWatch
+        5. Push to Metrics to Datadog (if enabled)
     '''
-    metrics_json = get_metrics_template()
+    # Import the Metrics Template from the Lambda deployment package
+    metrics = metrics_template.metrics
+    
+    # Filter out the included features alone
+    features = metrics.keys()
+    selected_features = []
+    if len(INCLUDE_FEATURES) != 0:
+        for feature in features:
+            if feature in INCLUDE_FEATURES:
+                selected_features.append(feature)
+    else:
+        selected_features = features
+
+    # Get all Citrix ADC VPX from the provided AWS Autoscale Group
     vpx_instances = get_vpx_instances(asg_name)
     for vpx in vpx_instances:
-        stats = fill_up_metrics(vpx, metrics_json)
-        push_stats(stats)
+        stats = pull_citrixadc_metrics(vpx, selected_features)
+        if PUSH_TO_CLOUDWATCH:
+            push_metrics_cloudwatch(vpx, metrics, stats)
+        if PUSH_TO_DATADOG:
+            push_metrics_datadog(vpx, metrics, stats)
