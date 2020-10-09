@@ -27,7 +27,7 @@ DATADOG_PREFIX = 'citrixadc'
     INCLUDE_FEATURES = [] (empty list) would enable stats to be pulled
     for all the features specified in the Metrics JSON
 '''
-INCLUDE_FEATURES = ['system', 'protocolhttp', 'lbvserver', 'csvserver', 'service']
+INCLUDE_FEATURES = ['system', 'protocolhttp', 'lbvserver', 'csvserver']
 #INCLUDE_FEATURES = []
 
 CLOUDWATCH_TEMPLATE = {
